@@ -57,8 +57,6 @@ I.4 Architectural Patterns and Styles
 Software architects choose appropriate architectural patterns and styles that best suit the project's needs. They can opt for a monolithic, microservices, or serverless architecture, among others.
 
 ```mermaid
-{{< mermaid >}}
-
 {{<mermaid>}}
 graph TD
   A[Project Goals] -->|Software Architect| B[Architectural Patterns]
