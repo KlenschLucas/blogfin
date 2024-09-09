@@ -9,10 +9,14 @@ Our Comprehensive Learning Guides Platform offers meticulously curated collectio
 <hr />
 
 Discover the world of [Finance](finance), [Coding](Code), and [Trading](Trading) with Guides.md. Delve into comprehensive guides and expand your knowledge horizons
+{{ $allPages := shuffle .Site.RegularPages }}
+{{ $randomPage := index $allPages 0 }}
+
 
 {{<button
   id="switch-layout-button"
   class="px-4 !text-neutral !no-underline rounded-md bg-primary-600 hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  href="{{ $randomPage.RelPermalink }}"
 >}}
   View a random guide
 {{</button>}}
